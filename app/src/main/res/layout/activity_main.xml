@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EDA5A5"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:text="QR Code"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/accelerate"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/generateQR"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/accelerate"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="78dp"
+            android:text="Generate QR code"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/scanQrcode"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg"
+        android:layout_below="@+id/generateQR"
+        android:layout_height="250dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Scan QR code"
+            android:layout_marginTop="78dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</RelativeLayout>
